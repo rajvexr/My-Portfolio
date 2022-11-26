@@ -40,7 +40,7 @@
     <section class="home container" id="home">
       <div class="home-content">
         <div class="home-image">
-          <img src="download.png" alt="" />
+          <img src="./Images/download.png" alt="" />
         </div>
         <div class="home-text">
           <h3>Hello</h3>
@@ -68,7 +68,7 @@
             Software Engineer <br />
             with Test
           </h2>
-          <a href="RajveerCV.pdf" class="btn" download="">
+          <a href="./Documents/RajveerCV.pdf" class="btn" download="">
             Download Cv
             <i class="bx bx-download"></i>
           </a>
@@ -99,47 +99,46 @@
       <h2 class="heading">Projects</h2>
       <!-- projects content -->
       <div class="projects-content">
-
-      <div class="project-box">
-        <h2>2-PLAYER-DICE</h2>
-        <div class="project-image">
-          <img src="p1.png" alt="">
+        <div class="project-box">
+          <h2>2-PLAYER-DICE</h2>
+          <div class="project-image">
+            <img src="./Images/p1.png" alt="" />
+          </div>
+          <a href="https://2playerdice.netlify.app/" class="btn-project">
+            <i class="bx bx-joystick-button"></i>
+          </a>
         </div>
-        <a href="https://2playerdice.netlify.app/" class="btn-project">
-          <i class='bx bx-joystick-button'></i>
+
+        <div class="project-box">
+          <h2>NUMBER-GUESS</h2>
+          <div class="project-image">
+            <img src="./Images/p2.png" alt="" />
+          </div>
+          <a href="https://guessnxmber.netlify.app/" class="btn-project">
+            <i class="bx bx-joystick-button"></i>
+          </a>
+        </div>
+
+        <div class="project-box">
+          <h2>TODO-LIST</h2>
+          <div class="project-image">
+            <img src="./Images/p3.png" alt="" />
+          </div>
+          <a href="https://onlychecklist.netlify.app/" class="btn-project">
+            <i class="bx bx-joystick-button"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="github-box">
+        <p>
+          For more projects to view, check out my
+          <span class="color">GitHub</span>
+        </p>
+        <a href="https://github.com/rajvexr" class="btn-github">
+          <i class="bx bxl-github"></i>
         </a>
       </div>
-      
-      <div class="project-box">
-      <h2>NUMBER-GUESS</h2>
-      <div class="project-image">
-        <img src="p2.png" alt="">
-      </div>
-      <a href="https://guessnxmber.netlify.app/" class="btn-project">
-        <i class='bx bx-joystick-button'></i>
-      </a>
-    </div>
-
-    <div class="project-box">
-    <h2>TODO-LIST</h2>
-    <div class="project-image">
-      <img src="p3.png" alt="">
-    </div>
-    <a href="https://onlychecklist.netlify.app/" class="btn-project">
-      <i class='bx bx-joystick-button'></i>
-    </a>
-  </div>
-</div>
-
-<div class="github-box">
-  <p>
-    For more projects to view, check out my <span class="color">GitHub</span>
-  </p>
-  <a href="https://github.com/rajvexr" class="btn-github">
-    <i class='bx bxl-github' ></i>
-  </a>
-</div>
-
     </section>
 
     <!-- Contact Section -->
@@ -147,10 +146,47 @@
     <section class="contact container" id="contact">
       <!-- Heading -->
       <h2 class="heading">Contact</h2>
+
+      <!-- Form -->
+
+      <form action="" class="contact-form" id="contact-form">
+        <input type="text" placeholder="Your Name" class="name" required />
+        <input
+          type="email"
+          placeholder="Enter Email Address"
+          id=""
+          name=""
+          class="email"
+          required
+        />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Write Message Here..."
+          class="message"
+          required
+        ></textarea>
+        <input type="submit" value="Send" class="btn-send" />
+      </form>
     </section>
 
-    <!-- <footer>
-      <p>Rajveer Singh</p>
-    </footer> -->
+    <!-- Footer Section -->
+
+    <section class="footer container" id="footer">
+      <p>&#169; RajveerSingh</p>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("JcaYoF-j4EpBM3nRV");
+      })();
+    </script>
   </body>
 </html>
